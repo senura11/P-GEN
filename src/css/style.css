@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Existing styles */
+.nav-link {
+    @apply px-4 py-2 text-gray-300 hover:text-white transition-colors duration-300;
+}
+
+body {
+    @apply mt-0; /* Changed from mt-20 to mt-0 */
+}
+
+/* New styles for hero section */
+@layer components {
+    .hero-gradient {
+        @apply bg-gradient-to-br from-gray-900 to-gray-800;
+    }
+    
+    .heading-gradient {
+        @apply bg-gradient-to-r from-blue-400 to-purple-500;
+    }
+
+    .password-input {
+        @apply w-full px-4 py-4 text-xl bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg font-mono;
+    }
+
+    .btn {
+        @apply px-6 py-3 rounded-lg transition duration-200 flex items-center justify-center;
+    }
+
+    .btn-primary {
+        @apply bg-blue-600 hover:bg-blue-700 text-white;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-600 hover:bg-gray-700 text-white;
+    }
+} 

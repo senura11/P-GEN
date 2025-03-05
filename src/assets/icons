@@ -1,0 +1,15 @@
+password-generator
+├── src
+│   ├── index.html
+│   ├── js
+│   │   ├── main.js
+│   │   └── themeToggle.js
+│   ├── css
+│   │   └── style.css
+│   └── assets
+│       └── icons
+│           ├── light-sun.svg
+│           └── dark-moon.svg
+├── tailwind.config.js
+├── package.json
+└── README.md
